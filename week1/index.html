@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Attendance System</h2>
+
+    <input id="id" placeholder="Student ID">
+    <input id="name" placeholder="Student Name">
+
+    <select id="status">
+        <option value="true">Present</option>
+        <option value="false">Absent</option>
+    </select>
+
+    <br>
+    <button onclick="addStudent()">Add</button>
+
+    <br><br>
+    <button onclick="updateAllDOM()">Update Using DOM</button>
+    <button onclick="updateAllVDOM()">Update Using VDOM</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Attendance</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="list"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
